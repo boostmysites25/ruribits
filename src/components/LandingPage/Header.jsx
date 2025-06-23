@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="fixed z-40 top-0 left-0 w-full backdrop-blur-md">
       <div className="backdrop-blur-sm bg-white/40">
-        <div className="flex w-full justify-between items-center gap-5 py-5 wrapper">
+        <div className="flex w-full justify-between items-center gap-5 py-2 sm:py-2.5 wrapper">
           <ScrollLink
             to="banner"
             spy={true}
@@ -25,7 +25,7 @@ const Header = () => {
               alt="logo"
               width="150"
               height="100"
-              className="w-[3.5rem] object-contain scale-110"
+              className="w-[3.5rem] object-contain scale-110 -translate-x-2"
             />
           </ScrollLink>
           <div

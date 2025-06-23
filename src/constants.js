@@ -32,6 +32,10 @@ export const clientDetails = {
   phone: "919884250324",
   email: "contact@ruribits.com",
   address: "No. 5, 4th cross road, near JVS mills, Karur - 639002",
+  linkedin: "https://www.linkedin.com/company/ruribits-technology-and-services",
+  instagram: "https://www.instagram.com/ruribits?igsh=MnY0YTRoOGt2bHh5",
+  facebook: "https://www.facebook.com/share/1GKWZ7JxcW/",
+  twitter: "https://x.com/ruribits_tech?t=6YPciPHqcQkWilLPQCkIkA&s=09",
 };
 
 // landing page header links
@@ -690,36 +694,35 @@ export const industriesCompanyServe = [
   },
 ];
 
-
 // portfolio images (web development)
 export const webPortfolio = [
   {
     id: 1,
-    img: require('./assets/portfolio/web-development/5ghomes.webp'),
+    img: require("./assets/portfolio/web-development/5ghomes.webp"),
     title: "5g Homes",
     link: "https://5ghighspeedinternet.co",
   },
   {
     id: 2,
-    img: require('./assets/portfolio/web-development/cold-creekcap.webp'),
+    img: require("./assets/portfolio/web-development/cold-creekcap.webp"),
     title: "Cold Creekcap",
     link: "https://www.coldcreekcap.com",
   },
   {
     id: 3,
-    img: require('./assets/portfolio/web-development/think-reality.webp'),
+    img: require("./assets/portfolio/web-development/think-reality.webp"),
     title: "Think Reality",
     link: "https://thinkrealty.ae",
   },
   {
     id: 4,
-    img: require('./assets/portfolio/web-development/akash-mega-mart.webp'),
+    img: require("./assets/portfolio/web-development/akash-mega-mart.webp"),
     title: "Akash Mega Mart",
     link: "https://akashmegamart.com/",
   },
   {
     id: 5,
-    img: require('./assets/portfolio/web-development/midwam.webp'),
+    img: require("./assets/portfolio/web-development/midwam.webp"),
     title: "Midwam – Immersive Experience Design Company",
     link: "https://www.midwam.com/en/about",
   },
@@ -729,32 +732,32 @@ export const webPortfolio = [
 export const appPortfolio = [
   {
     id: 1,
-    img: require('./assets/portfolio/app-development/akash_mega_mart-app.webp'),
+    img: require("./assets/portfolio/app-development/akash_mega_mart-app.webp"),
     title: "Akash Mega Mart Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
     id: 2,
-    img: require('./assets/portfolio/app-development/feelit_app.webp'),
+    img: require("./assets/portfolio/app-development/feelit_app.webp"),
     title: "FeelIt Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
   },
   {
     id: 3,
-    img: require('./assets/portfolio/app-development/klikomics.webp'),
+    img: require("./assets/portfolio/app-development/klikomics.webp"),
     title: "Klikomics Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 4,
-    img: require('./assets/portfolio/app-development/autosnap-app.webp'),
+    img: require("./assets/portfolio/app-development/autosnap-app.webp"),
     title: "AutoSnap Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
     id: 5,
-    img: require('./assets/portfolio/app-development/rentop.webp'),
+    img: require("./assets/portfolio/app-development/rentop.webp"),
     title: "Rentop Bike and Car",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
-  },
+  },
 ];

@@ -142,7 +142,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="">{errors.name?.message}</p>
+              <p className="text-red-500">{errors.name?.message}</p>
             </div>
             <div className="">
               <label className="text-white">Email</label>
@@ -159,7 +159,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="">{errors.email?.message}</p>
+              <p className="text-red-500">{errors.email?.message}</p>
             </div>
           </div>
           <div className="grid lg:grid-cols-2 gap-3">
@@ -180,7 +180,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="">{errors.subject?.message}</p>
+              <p className="text-red-500">{errors.subject?.message}</p>
             </div>
             <div className="">
               <label className="text-white">Phone Number</label>
@@ -197,7 +197,7 @@ export const InquiryForm = () => {
                   },
                 })}
               />
-              <p className="">{errors.phone?.message}</p>
+              <p className="text-red-500">{errors.phone?.message}</p>
             </div>
           </div>
           <div className="flex flex-col relative" ref={dropdownRef}>
@@ -254,7 +254,7 @@ export const InquiryForm = () => {
                 },
               })}
             />
-            <p className="">{errors.message?.message}</p>
+            <p className="text-red-500">{errors.message?.message}</p>
           </div>
           <button
             type="submit"

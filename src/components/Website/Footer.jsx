@@ -5,6 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { GrFacebookOption } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 import { allServices, clientDetails, logo } from "../../constants";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,19 +33,29 @@ const Footer = () => {
 
             <div className="flex mt-3 gap-4 items-center">
               <Link
-                to="#"
+                to={clientDetails.linkedin}
+                target="_blank"
                 className="bg-white/10 p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
               >
                 <FaLinkedinIn className="text-xl" />
               </Link>
               <Link
-                to="#"
+                to={clientDetails.twitter}
+                target="_blank"
+                className="bg-white/10 p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+              >
+                <FaXTwitter className="text-xl" />
+              </Link>
+              <Link
+                to={clientDetails.instagram}
+                target="_blank"
                 className="bg-white/10 p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
               >
                 <AiFillInstagram className="text-xl" />
               </Link>
               <Link
-                to="#"
+                to={clientDetails.facebook}
+                target="_blank"
                 className="bg-white/10 p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-300"
               >
                 <GrFacebookOption className="text-xl" />

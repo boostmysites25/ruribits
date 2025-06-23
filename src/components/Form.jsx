@@ -41,16 +41,19 @@ const Form = () => {
       to: clientDetails.email,
       subject: values.subject,
       body: emailBody,
-      name:"Ruribits"
+      name: "Ruribits",
     };
 
-    await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    })
+    await fetch(
+      "https://send-mail-redirect-boostmysites.vercel.app/send-email",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      }
+    )
       .then((response) => response.json())
       .then((res) => {
         if (res.error) {
@@ -79,7 +82,6 @@ const Form = () => {
               <input
                 type="text"
                 className="w-full outline-none p-3 rounded-lg  border"
-                required
                 autoComplete="off"
                 placeholder="Name"
                 {...register("name", {
@@ -93,13 +95,12 @@ const Form = () => {
                   },
                 })}
               />
-              <p className="text-red-900">{errors.name?.message}</p>
+              <p className="text-red-500">{errors.name?.message}</p>
             </div>
             <div className="">
               <input
                 type="email"
                 className="w-full outline-none p-3 rounded-lg  border"
-                required
                 autoComplete="off"
                 placeholder="Email"
                 {...register("email", {
@@ -110,7 +111,7 @@ const Form = () => {
                   },
                 })}
               />
-              <p className="text-red-900">{errors.email?.message}</p>
+              <p className="text-red-500">{errors.email?.message}</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -118,7 +119,6 @@ const Form = () => {
               <input
                 type="text"
                 className="w-full outline-none p-3 rounded-lg  border"
-                required
                 autoComplete="off"
                 placeholder="Subject"
                 {...register("subject", {
@@ -132,7 +132,7 @@ const Form = () => {
                   },
                 })}
               />
-              <p className="text-red-900">{errors.subject?.message}</p>
+              <p className="text-red-500">{errors.subject?.message}</p>
             </div>
             <div className="">
               <input
@@ -148,51 +148,16 @@ const Form = () => {
                   },
                 })}
               />
-              <p className="text-red-900">{errors.phone?.message}</p>
+              <p className="text-red-500">{errors.phone?.message}</p>
             </div>
           </div>
-          {/* <div className="flex flex-col relative" ref={dropdownRef}>
-            // <label className="text-white">Service You Are Interested In</label>
-            <div
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="p-3 bg-background rounded-lg cursor-default flex justify-between items-center"
-            >
-              {selectedService}
-              <BiCaretRight
-                className={`${
-                  dropdownOpen && "rotate-90"
-                } transition-all duration-200 text-2xl text-primary`}
-              />
-            </div>
-            {dropdownOpen && (
-              <div
-                name=""
-                id=""
-                className="outline-none rounded-lg overflow-hidden top-[5rem] absolute bg-gray-50 w-full"
-              >
-                {allServices.map((item) => (
-                  <div
-                    key={item.id}
-                    className="hover:bg-primary/20 p-3 cursor-pointer"
-                    value={item.title}
-                    onClick={() => {
-                      setSelectedService(item.title);
-                      setDropdownOpen(false);
-                    }}
-                  >
-                    <span className="">{item.title}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div> */}
+
           <div>
             <textarea
               type="text"
               rows="4"
               placeholder="Message"
               className="w-full outline-none p-3 rounded-lg  "
-              required
               autoComplete="off"
               {...register("message", {
                 required: "Message is required",
@@ -205,7 +170,7 @@ const Form = () => {
                 },
               })}
             />
-            <p className="text-red-900">{errors.message?.message}</p>
+            <p className="text-red-500">{errors.message?.message}</p>
           </div>
           <button
             disabled={isSubmitting}
