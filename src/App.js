@@ -54,7 +54,7 @@ function App() {
               <Route path="/services" element={<OurServices />} />
               <Route path="/industries" element={<Industries />} />
               <Route path="/blogs" element={<Blogs />} />
-              <Route path="/blog-detail/:id" element={<BlogsDetail />} />
+              <Route path="/blogs/:slug" element={<BlogsDetail />} />
               <Route path="/thank-you" element={<ThankYou />} />
 
               {/* Services Detail Routes with Layout */}

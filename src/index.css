@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.reset-html-content * {
+  all: revert;
+}
+
 @layer utilities {
   .wrapper {
     @apply max-w-[90rem] mx-auto px-3 sm:px-8;
@@ -54,16 +58,16 @@ body {
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background: #ECF0F1;
-  color: #34495E;
+  background: #ecf0f1;
+  color: #34495e;
   font-size: 90%;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   @apply bg-primary;
   width: 6px;
   border-radius: 6px;
@@ -80,7 +84,7 @@ html {
 
 /* header mobile menu offcanvas */
 .EZDrawer .EZDrawer__container {
-  background: #ECF0F1 !important;
+  background: #ecf0f1 !important;
   width: 80vw !important;
 }
 
@@ -144,7 +148,7 @@ html {
   bottom: 0;
   margin: auto;
   border: 3px solid;
-  border-color: transparent #2ECC71 #2ECC71;
+  border-color: transparent #2ecc71 #2ecc71;
   width: 24px;
   height: 24px;
   border-radius: 50%;
